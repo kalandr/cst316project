@@ -1,6 +1,7 @@
 package edu.asu.cst315;
 
 import com.sun.corba.se.impl.orbutil.graph.Graph;
+import org.lwjgl.Sys;
 import org.newdawn.slick.*;
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.state.BasicGameState;
@@ -26,7 +27,15 @@ public class Menu extends BasicGameState {
 
     @Override
     public void update(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException {
+        int posX = Mouse.getX();
+        int posY = Mouse.getY();
 
+        if ((posX > 100 && posX < 311) && (posY > 100 && posY < 260)) {
+            System.out.println("On point");
+            if (Mouse.isButtonDown(0)){
+                stateBasedGame.enterState(1);
+            }
+        }
     }
 
     @Override
