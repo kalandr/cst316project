@@ -20,8 +20,8 @@ public class Menu extends BasicGameState {
 
     @Override
     public void init(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException {
-        playNow  = new Image(image_path + File.separator + "play-now.png");
-//        exitGame = new Image(System.getProperty("user.dir") + "/edu/asu/cst315/img/play-now.png");
+        playNow  = new Image(image_path + File.separator + "playNow.png");
+        exitGame = new Image(image_path + File.separator + "exitGame.png");
     }
 
     @Override
@@ -32,7 +32,8 @@ public class Menu extends BasicGameState {
     @Override
     public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics graphics) throws SlickException {
         graphics.drawString("Game of Life", 100, 50);
-        playNow.draw(100,100);
+        playNow.draw(100, 100);
+        exitGame.draw(100,200);
     }
 
     @Override
