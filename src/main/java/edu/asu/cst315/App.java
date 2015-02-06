@@ -1,5 +1,7 @@
 package edu.asu.cst315;
 
+import edu.asu.cst315.states.Menu;
+import edu.asu.cst315.states.Play;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.StateBasedGame;
 

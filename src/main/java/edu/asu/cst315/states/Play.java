@@ -1,4 +1,4 @@
-package edu.asu.cst315;
+package edu.asu.cst315.states;
 
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.GameContainer;
